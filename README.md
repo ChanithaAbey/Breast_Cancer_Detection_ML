@@ -1,4 +1,4 @@
-Breast Cancer Detection using Machine Learning
+# Breast Cancer Detection using Machine Learning
 
 This project uses a machine learning model based on Logistic Regression to classify tumors as either malignant (cancerous) or benign (not cancerous) based on the analysis of several diagnostic features. This is achieved through the use of the Breast Cancer Wisconsin dataset available through scikit-learn, developed using Python along with relevant data science libraries.
 
