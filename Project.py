@@ -42,20 +42,20 @@ def model():
 
     return model, testing_features, testing_labels
 
-def predict_new_data(model, testing_features, testing_labels):
+def predict(model, testing_features, testing_labels):
     # Get a random sample from the test set and predict its class
     index = random.randint(0, len(testing_features) - 1)
-    new_sample_data = testing_features[index].reshape(1, -1)  # Reshape the sample to fit the model's input shape
+    new = testing_features[index].reshape(1, -1)  # Reshape the sample to fit the model's input shape
 
     # True label for comparison
-    true_label = testing_labels[index]
+    actual = testing_labels[index]
 
     # Predicted label
-    predicted_label = model.predict(new_sample_data)
+    prediction = model.predict(new)
     print("")
-    print (f"Sample Data: {new_sample_data[0]}")
+    print (f"Sample Data: {new[0]}")
     print("")
-    print (f"Predicted Class: {predicted_label[0]}, Actual Class: {true_label}\n")
+    print (f"Predicted Class: {prediction[0]}, Actual Class: {actual}\n")
 
 try:
     # Get user input for number of samples to predict
@@ -70,6 +70,4 @@ else:
     else:
         model, testing_features, testing_labels = model()
         for _ in range(num):
-            predict_new_data(model, testing_features, testing_labels)
-            
-
+            predict(model, testing_features, testing_labels)
