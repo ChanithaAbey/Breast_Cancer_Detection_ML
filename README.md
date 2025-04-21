@@ -130,12 +130,4 @@ Predicted Class: 1, Actual Class: 1
 
 ---
 
-## License
-This project is open-source and available under the MIT License.
-
----
-
-## Author
-**Chanitha Abeygunawardena**  
-[GitHub Profile](https://github.com/chanithaa)
 
