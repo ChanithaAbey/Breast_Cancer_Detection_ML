@@ -23,7 +23,7 @@ This project uses a machine learning model based on Logistic Regression to class
 
 1. Clone this repository:
 ```bash
-git clone https://github.com/chanithaa/Breast_Cancer_Detection_ML.git
+git clone https://github.com/ChanithaAbey/Breast_Cancer_Detection_ML
 cd Breast_Cancer_Detection_ML
 ```
 
